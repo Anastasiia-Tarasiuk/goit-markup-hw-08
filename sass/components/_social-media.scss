@@ -1,0 +1,41 @@
+/* Социальные сети */
+.social-media {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.social-media__item {
+    width: 44px;
+    height: 44px;
+    
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.social-media__link {
+    width: 100%;
+    height: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: var(--icon-color);
+
+    // transition: background-color var(--duration) var(--cubic), fill var(--duration) var(--cubic);
+    @include transition (background-color);
+    
+    &:hover, 
+    &:focus {
+        background-color: var(--color-blue);
+        fill: var(--color-white);
+    }
+
+    &--reverse {
+        background: rgba(255, 255, 255, 0.1);
+        fill: var(--color-white);
+
+        transition: background-color var(--duration) var(--cubic);
+    }
+}

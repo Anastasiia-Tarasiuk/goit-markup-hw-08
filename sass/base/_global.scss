@@ -1,0 +1,27 @@
+/* Подключение основного и альтернативного шрифтов, цвета текста */
+body {
+    color: var(--color-grey);
+    background-color: var(--color-white);
+
+    font-family: $font-family-primary;
+}
+
+/* Значения по умолчанию */
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/*  Скрытие объектов */
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+

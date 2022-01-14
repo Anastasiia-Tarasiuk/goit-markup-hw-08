@@ -1,0 +1,40 @@
+/* Преимущества */
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.benefits__thumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color:var(--background-color-grey);
+    width: 270px;
+    height: 120px;
+    margin-bottom: var(--margin-gap);
+    border-radius: 4px;
+}
+   
+.benefits__item {
+    flex-basis: calc((100% - 3 * var(--margin-gap)) / 4);
+
+    &:not(:last-child) {
+        margin-right: var(--margin-gap);
+    }
+}    
+
+.benefits__title {
+    color: var(--color-black);
+
+    @extend %uppercase-font;
+
+    margin-bottom: 10px;
+}
+
+.benefits__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
