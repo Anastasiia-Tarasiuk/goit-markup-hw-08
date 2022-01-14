@@ -21,23 +21,29 @@
 }
 
 // Кнопка мобильного меню
-.burger__button {
+.burger-button {
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
 
     border: none;
     background-color: transparent;
     padding: 0;
+    z-index: 5;
 }
 
-.burger__button .burger__close {
+.burger-button .burger-button__close {
     display: none;
 }
 
-.burger__button.is-open .burger__menu {
+.burger-button.is-open .burger-button__menu {
     display: none;
 }
 
-.burger__button.is-open .burger__close {
+.burger-button.is-open .burger-button__close {
     display: block;
 }
 

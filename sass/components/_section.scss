@@ -1,7 +1,12 @@
 /* Стилизация секции */
 .section {
-    padding: 94px 0;
-    
+    padding: 60px 0;
+
+    @media screen and (min-width: 769px) {
+        padding: 94px 0;
+        
+    }
+
     &--paddingbottom {
         padding-bottom: 0;
     }

@@ -1,29 +1,62 @@
 /* Преимущества */
 .benefits {
-    display: flex;
-    flex-wrap: wrap;
+    margin: calc(-1 * var(--margin-gap));
+}
+
+@media screen and (min-width: 481px) {
+    .benefits { 
+        display: flex;
+        flex-wrap: wrap;
+    }
     
 }
 
-.benefits__thumb {
+.benefits__thumb {  
     display: flex;
     justify-content: center;
-    align-items: center;
-
+    align-items: center;     
     background-color:var(--background-color-grey);
-    width: 270px;
+    width: 100%;
     height: 120px;
     margin-bottom: var(--margin-gap);
     border-radius: 4px;
 }
-   
+
 .benefits__item {
-    flex-basis: calc((100% - 3 * var(--margin-gap)) / 4);
+    width: 100%;
+    // flex-basis: calc((100%  * var(--margin-gap)) / 1);
 
     &:not(:last-child) {
-        margin-right: var(--margin-gap);
+        margin: var(--margin-gap);
     }
+
+    // @media screen and () {
+        
+    // }
 }    
+
+
+// @media screen and (min-width: 769px) {}
+//     .benefits__thumb {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         background-color:var(--background-color-grey);
+//         width: 270px;
+//         height: 120px;
+//         margin-bottom: var(--margin-gap);
+//         border-radius: 4px;
+//     }
+    
+//     .benefits__item {
+//         flex-basis: calc((100% - 3 * var(--margin-gap)) / 4);
+
+//         &:not(:last-child) {
+//             margin-right: var(--margin-gap);
+//         }
+//     }    
+// }
 
 .benefits__title {
     color: var(--color-black);
