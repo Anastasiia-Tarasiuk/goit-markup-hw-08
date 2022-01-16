@@ -324,6 +324,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 4;
 }
 
 @media screen and (max-width: 480px) {
