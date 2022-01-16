@@ -2,7 +2,7 @@
 .social-media {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .social-media__item {
@@ -12,6 +12,13 @@
     &:not(:last-child) {
         margin-right: 10px;
     }
+    
+    
+    // @media screen and  (min-width: 769px)   {
+    //     flex-basis: calc(100% - 4 * var(--margin-gap) / 4);
+    //     width: auto;
+    //     height: auto;
+    // }
 }
 
 .social-media__link {
@@ -35,7 +42,8 @@
     &--reverse {
         background: rgba(255, 255, 255, 0.1);
         fill: var(--color-white);
-
-        transition: background-color var(--duration) var(--cubic);
+        
+        // transition: background-color var(--duration) var(--cubic);
+        @include transition (background-color);
     }
 }

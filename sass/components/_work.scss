@@ -1,8 +1,14 @@
 /* Чем мы занимаемся */
-.work {
-    display: flex;
-    flex-wrap: wrap;
+.section__work {
+    display: none;
+    
+    @media screen and (min-width: 769px) {
+        display: block;       
+    }
+}
 
+.work {
+    display: flex;    
 }
 
 .work__item {
@@ -16,7 +22,8 @@
 .work__img {
     display: block;
     height: auto;
-    flex-basis: calc((100% - 2 * var(--margin-gap)) / 3);
+    flex-basis: calc((100% - 3 * var(--margin-gap)) / 3);
+    margin-right: var(--margin-gap);
 }
 
 .work__text {
@@ -36,4 +43,3 @@
     justify-content: center;
     align-items: center;
 }
-

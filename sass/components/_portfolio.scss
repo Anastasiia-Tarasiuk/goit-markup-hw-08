@@ -1,15 +1,43 @@
 /* Контент портфолио */
 .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: calc(-1 * var(--margin-gap));
-    margin-bottom: calc(-1 * var(--margin-gap));
+    @media screen and (min-width: 481px) {
+        display: flex;
+        flex-wrap: wrap;       
+    }
 }
 
 .portfolio__item {
-    margin-right: var(--margin-gap);
     margin-bottom: var(--margin-gap);
-    flex-basis: calc(100% / 3 - var(--margin-gap));
+
+    &:last-child {
+        margin-bottom: 0;
+        align-self: start;
+    }
+
+    @media screen and (min-width: 481px) {
+        flex-basis: calc((100% - var(--margin-gap)) / 2);
+
+        &:nth-child(odd) {
+            margin-right: var(--margin-gap);
+        }        
+    }
+    
+    @media screen and (min-width: 769px) {
+        flex-basis: calc((100% - 2 * var(--margin-gap)) / 3);
+
+        &:nth-child(odd) {
+            margin-right: 0;
+        }   
+        
+        &:not(:nth-child(3n)) {
+            margin-right: var(--margin-gap);
+        }    
+
+        &:nth-last-child(-n+3) {
+            margin-bottom: 0;
+        }    
+    }
+    
 }
 
 
@@ -29,6 +57,10 @@
     position: relative;
 
     overflow: hidden;
+}
+
+.project__img {
+    width: 100%;
 }
 
 .project__description {

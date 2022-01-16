@@ -1,19 +1,41 @@
 /* Наша команда */
 .team {
-    background-color:var(--background-color-grey);
-    display: flex;
-    flex-wrap: wrap;
+    margin-bottom: calc(-1 * var(--margin-gap));
+
+    @media screen and (min-width: 481px) {
+        display: flex;
+        flex-wrap: wrap;
+
+        margin-right: calc(-1 * var(--margin-gap));
+    }
 }
         
 .team__item {
     background-color: var(--color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    flex-basis: calc((100% - 3 * var(--margin-gap)) / 4);
-
-    border-radius: 0px 0px 4px 4px;
     
-    &:not(:last-child) {
-        margin-right: var(--margin-gap);
-    }
-}
+    border-radius: 0px 0px 4px 4px;
 
+    margin-bottom: var(--margin-gap);
+      
+    @media screen and (min-width: 481px) {
+        flex-basis: calc((100% - 2 * var(--margin-gap)) / 2);
+        
+        &:nth-child(odd) {
+            margin-right: var(--margin-gap);      
+        }
+        &:nth-last-child(-n + 2) {
+            margin-bottom: 0;
+        }
+    }
+    
+    @media screen and (min-width: 769px) {
+        flex-basis: calc((100% - 4 * var(--margin-gap)) / 4); 
+        margin-bottom: 0;
+
+        &:not(:last-child) {
+            margin-right: var(--margin-gap);
+        }       
+    }
+    
+}
