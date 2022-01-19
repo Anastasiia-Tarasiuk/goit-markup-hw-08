@@ -2,11 +2,14 @@
 .team {
     margin-bottom: calc(-1 * var(--margin-gap));
 
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-
-        margin-right: calc(-1 * var(--margin-gap));
+        margin-bottom: 0;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
     }
 }
         
@@ -18,24 +21,24 @@
 
     margin-bottom: var(--margin-gap);
       
-    @media screen and (min-width: 481px) {
-        flex-basis: calc((100% - 2 * var(--margin-gap)) / 2);
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - var(--margin-gap)) / 2);
         
         &:nth-child(odd) {
             margin-right: var(--margin-gap);      
         }
+
         &:nth-last-child(-n + 2) {
             margin-bottom: 0;
         }
     }
     
-    @media screen and (min-width: 769px) {
-        flex-basis: calc((100% - 4 * var(--margin-gap)) / 4); 
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 3 var(--margin-gap)) / 4); 
         margin-bottom: 0;
 
         &:not(:last-child) {
             margin-right: var(--margin-gap);
         }       
-    }
-    
+    }  
 }

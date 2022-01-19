@@ -1,7 +1,7 @@
 .hero {
     background-color: var(--footer-color);
     padding: 118px 0;
-    width: 480px;
+    width: 100%;
     margin: 0 auto;
 
     background-image: linear-gradient(to right, 
@@ -14,15 +14,12 @@
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        .box {
             background-image: linear-gradient(to right, 
             rgba(47, 48, 58, 0.4), 
             rgba(47, 48, 58, 0.4)), url(../images/hero-mobile@2x.jpg);
-        }
     }
 
     @media screen and (min-width: 768px) {
-        width: 768px;
         background-image: linear-gradient(to right, 
         rgba(47, 48, 58, 0.4), 
         rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
@@ -30,17 +27,14 @@
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            .box {
                 background-image: linear-gradient(to right, 
                 rgba(47, 48, 58, 0.4), 
                 rgba(47, 48, 58, 0.4)), url(../images/hero-tablet@2x.jpg);
-            }
         }
     }
 
     @media screen and (min-width: 1200px) {
         padding: 200px 0;
-        width: 1200px;
         background-image: linear-gradient(to right, 
         rgba(47, 48, 58, 0.4), 
         rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
@@ -48,15 +42,13 @@
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            .box {
                 background-image: linear-gradient(to right, 
                 rgba(47, 48, 58, 0.4), 
                 rgba(47, 48, 58, 0.4)), url(../images/hero@2x.jpg);
-            }
         }
     }
 }
-
+// тт
 .hero__conteiner {
         display: flex;
         flex-direction: column;
@@ -74,28 +66,14 @@
 
     margin-bottom: 30px;
 
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 768px) {
         width: 360px;  
     }
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1200px) {
         font-size: 44px;
         line-height: 1.36;
 
         width: 696px;  
     }
 }
-
-
-    
-    // .hero__title {
-    //     
-    
-    //     font-weight: 900;
-    //     text-align: center;
-    //     letter-spacing: 0.06em;
-    //     text-transform: uppercase;
-    
-    //     width: 696px;
-    //     margin-bottom: 30px;
-    // }

@@ -2,7 +2,7 @@
 .section {
     padding: 60px 0;
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1200px) {
         padding: 94px 0;
 
         &--paddingbottom {
@@ -23,7 +23,7 @@
     
     margin-bottom: 30px;
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1200px) {
         font-size: 36px;
         line-height: 1.17; 
         margin-bottom: 50px;       
