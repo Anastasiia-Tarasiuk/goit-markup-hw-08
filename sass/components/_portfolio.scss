@@ -1,6 +1,6 @@
 /* Контент портфолио */
 .portfolio {
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;       
     }
@@ -14,7 +14,7 @@
         align-self: start;
     }
 
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 768px) {
         flex-basis: calc((100% - var(--margin-gap)) / 2);
 
         &:nth-child(odd) {
@@ -22,7 +22,7 @@
         }        
     }
     
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 1200px) {
         flex-basis: calc((100% - 2 * var(--margin-gap)) / 3);
 
         &:nth-child(odd) {
@@ -39,7 +39,6 @@
     }
     
 }
-
 
 .project {
     display: block;
